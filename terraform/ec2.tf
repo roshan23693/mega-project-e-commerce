@@ -7,7 +7,7 @@ data "aws_ami" "os_image" {
   }
   filter {
     name = "name"
-    values = ["ubuntu-eks/k8s_1.28/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20250527"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
   }
 }
 
