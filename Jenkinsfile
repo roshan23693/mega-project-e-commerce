@@ -10,7 +10,7 @@ pipeline {
         DOCKER_IMAGE_TAG = "${BUILD_NUMBER}"
         GITHUB_CREDENTIALS = credentials('github-credentials')
         GIT_REPO = "https://github.com/roshan23693/mega-project-e-commerce.git"
-        GIT_BRANCH = "master"
+        GIT_BRANCH = "main"
     }
     
     stages {
