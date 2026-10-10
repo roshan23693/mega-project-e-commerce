@@ -6,6 +6,13 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get update -y
 apt-get install -y fontconfig wget curl gnupg apt-transport-https lsb-release ca-certificates snapd
 
+# Java 21 (Temurin)
+mkdir -p /etc/apt/keyrings
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor --yes -o /etc/apt/keyrings/adoptium.gpg
+echo "deb [signed-by=/etc/apt/keyrings/adoptium.gpg] https://packages.adoptium.net/artifactory/deb $(lsb_release -sc) main" > /etc/apt/sources.list.d/adoptium.list
+apt-get update -y
+apt-get install -y temurin-21-jre
+
 # Jenkins
 mkdir -p /etc/apt/keyrings
 wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
