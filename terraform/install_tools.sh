@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Update system and install core packages
-sudo apt update
-sudo apt install fontconfig openjdk-21-jre
+sudo apt-get install -y fontconfig openjdk-21-jre
+sudo apt-get install -y jenkins
 
 
 # Jenkins installation
