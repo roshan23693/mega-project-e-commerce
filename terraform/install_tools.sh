@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Update system and install core packages
+sudo apt-get update -y
 sudo apt-get install -y fontconfig openjdk-21-jre
-sudo apt-get install -y jenkins
 
 
-# Jenkins installation
+
 # Jenkins installation
 sudo mkdir -p /etc/apt/keyrings
 sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
