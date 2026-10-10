@@ -4,7 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 # Core packages
 apt-get update -y
-apt-get install -y fontconfig wget curl gnupg apt-transport-https lsb-release ca-certificates snapd
+apt-get install -y fontconfig openjdk-21-jre wget curl gnupg apt-transport-https lsb-release ca-certificates snapd
 
 # Java 21 (Temurin)
 mkdir -p /etc/apt/keyrings
