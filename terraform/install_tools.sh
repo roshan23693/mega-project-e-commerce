@@ -1,4 +1,3 @@
-cat > install_tools.sh << 'EOF'
 #!/bin/bash
 set -euxo pipefail
 export DEBIAN_FRONTEND=noninteractive
@@ -32,4 +31,3 @@ apt-get install -y trivy
 snap install aws-cli --classic
 snap install helm --classic
 snap install kubectl --classic
-EOF
